@@ -21,7 +21,7 @@
 
 To get results on a live camera we utilized openCV, along with a pretrained detection model to draw bounding boxes around objects. Combining it with our CNN, we were then able to provide a label for each object.
 
-Dataset can be found on kaggle: https://www.kaggle.com/datasets/sumn2u/garbage-classification-v2/data
+Original Dataset can be found on kaggle: https://www.kaggle.com/datasets/sumn2u/garbage-classification-v2/data
 
 ## Model Architecture
 
