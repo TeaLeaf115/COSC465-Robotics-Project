@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{lastpage}
+
+\setstretch{1.5}
+
+%------------------ HEADER / FOOTER ------------------%
+\pagestyle{fancy}
+\fancyhf{}
+
+% Header image (replace with actual filename)
+\rhead{\includegraphics[height=0.8cm]{header_logo.png}}
+\lfoot{Robotics -- Spring 2026}
+
+% \lfoot{Group Project Report}
+\rfoot{Page \thepage \;of \pageref{LastPage}}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%------------------ SECTION STYLE ------------------%
+\titleformat{\section}{\large\bfseries}{\thesection.}{1em}{}
+
+\begin{document}
+
+%------------------ TITLE PAGE ------------------%
+\begin{titlepage}
+\centering
+
+\vspace*{1cm}
+
+%------------------ TITLE ------------------%
+{\Large \textbf{Project Title}} \\[0.5cm]
+
+{\normalsize by} \\[0.5cm]
+
+%------------------ TABLE ------------------%
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{6cm}|p{4cm}|}
+\hline
+\centering \textbf{Student Name} & \centering \textbf{TU ID} \tabularnewline
+\hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+ & \\ \hline
+\end{tabular}
+
+\vspace{1cm}
+
+%------------------ REPORT INFO ------------------%
+{\large \textbf{Group Project Report}} \\[0.5cm]
+
+In partial fulfillment of the requirements for \\[0.5cm]
+
+{\large \textbf{COSC 465: Robotics}} \\
+Spring-2026
+
+\vfill
+
+%------------------ SUBMITTED TO (RIGHT ALIGNED) ------------------%
+\begin{flushright}
+Submitted to \\
+Anik Mallik, PhD \\
+Assistant Professor \\
+Department of Computer and Information Sciences \\
+Towson University \\
+Towson, MD
+\end{flushright}
+
+%------------------ DATE ------------------%
+\centering
+Date of submission: MM/DD/YYYY
+\end{titlepage}
+
+
+%------------------ MAIN CONTENT ------------------%
+
+\section*{Introduction}
+Write about the project.
+
+Additionally, write about what study materials helped you accomplish the project (including the class lectures).
+
+\section*{Literature Review}
+What the current state-of-the-art related works are in both academia and industry; mostly related to the kind of robot you are building.
+
+\section*{Design and Assembly Description}
+Your system overview. Put a diagram showing your system.
+
+
+Write about the methods you adopted and the workflow of the system.
+
+\section*{Design Process/Analysis}
+Put the pictures along with explanation of each development stages, including the final and polished phase.
+
+\section*{Performance Results and Discussion}
+Provide performance results and discussion here. Think creatively how to assess your robot.
+
+\section*{Challenges and Future Work}
+Write about the challenges you faced and how you overcame them, any suggestion for improvement or the future work on this project.
+
+\section*{Conclusion}
+Conclude.
+
+\section*{References}
+Make sure you cite the works, websites, news, or any content that you used in your project. Moreover, please cite the works in the literature review.
+
+\section*{Appendices (if any)}
+If you want to put anything else in the report, please write them in this section.
+
+\vspace{1cm}
+
+\noindent \textit{Only one report from a group is to be submitted.}
+
+\end{document}
