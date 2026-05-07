@@ -1,0 +1,130 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{lastpage}
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+\setstretch{1.5}
+
+%------------------ HEADER / FOOTER ------------------%
+\pagestyle{fancy}
+\fancyhf{}
+
+% Header image (replace with actual filename)
+\rhead{\includegraphics[height=0.8cm]{header_logo.png}}
+\lfoot{Robotics -- Spring 2026}
+
+% \lfoot{Group Project Report}
+\rfoot{Page \thepage \;of \pageref{LastPage}}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%------------------ SECTION STYLE ------------------%
+\titleformat{\section}{\large\bfseries}{\thesection.}{1em}{}
+
+\begin{document}
+
+%------------------ TITLE PAGE ------------------%
+\begin{titlepage}
+\centering
+
+\vspace*{1cm}
+
+%------------------ TITLE ------------------%
+{\Large \textbf{AI Trash Sorting Robot}} \\[0.5cm]
+
+{\normalsize by} \\[0.5cm]
+
+%------------------ TABLE ------------------%
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{6cm}|p{4cm}|}
+\hline
+\centering \textbf{Student Name} & \centering \textbf{TU ID} \tabularnewline
+\hline
+Owen Barnes & 0829317\\ \hline
+Felistus Karanja & 0776223\\ \hline
+Ryan Domathoti & 0842475\\ \hline
+Daniel Anoruo & 0777502 \\ \hline
+Frankie Horter & 0810596\\ \hline
+Myles Burrows & 0779148\\ \hline
+\end{tabular}
+
+\vspace{1cm}
+
+%------------------ REPORT INFO ------------------%
+{\large \textbf{Group Project Report}} \\[0.5cm]
+
+In partial fulfillment of the requirements for \\[0.5cm]
+
+{\large \textbf{COSC 465: Robotics}} \\
+Spring-2026
+
+\vfill
+
+%------------------ SUBMITTED TO (RIGHT ALIGNED) ------------------%
+\begin{flushright}
+Submitted to \\
+Anik Mallik, PhD \\
+Assistant Professor \\
+Department of Computer and Information Sciences \\
+Towson University \\
+Towson, MD
+\end{flushright}
+
+%------------------ DATE ------------------%
+\centering
+Date of submission: 05/04/2026
+\end{titlepage}
+
+
+%------------------ MAIN CONTENT ------------------%
+
+\section*{Introduction}
+
+For this project we created an AI-powered trash-sorting robot. The robot that takes in top-down images of our waste plate and sends it through a Convolution Neural Network. The network determines if the waste on the tray is one of three things: Trash, Compost, or Recycle. After determining what the object is, the plate holding the object will rotate to face the respective bin and drop the object into it.
+
+The purpose of our robot is to completely automate the process of sorting between different types of waste. The problem with normal trash cans is that many times humans are lazy and careless and do not put in the mental effort to put their waste into the correct bin. This doesn't affect our individual lives but it harms our efforts to re-purpose recyclable and compostable which which in turn harms our planet. Our robot removes the variable of carelessness from the equation as all three types of waste are dropped onto the same plate and our automated process does the rest of the work.
+
+This project used topics covered by the lecture notes on Computer Vision, AI \& Deep Learning, Dynamics \& Actuators, and finally Transformation, Rotation, Joints, and Degrees of Freedom. All of these were extremely helpful when creating certain elements of the project.
+
+\section*{Literature Review}
+Currently in the field there are several forms of this kind of project. Ours is inspired by the company Ameru, based in Bulgaria. They created something similar where 
+
+\section*{Design and Assembly Description}
+Your system overview. Put a diagram showing your system.
+
+
+Write about the methods you adopted and the workflow of the system.
+
+\section*{Design Process/Analysis}
+Put the pictures along with explanation of each development stages, including the final and polished phase.
+
+\section*{Performance Results and Discussion}
+Unfortunately, we were not able to get the robot to sort between the three waste groups with 100\% accuracy with the time that we had.
+
+\section*{Challenges and Future Work}
+Write about the challenges you faced and how you overcame them, any suggestion for improvement or the future work on this project.
+
+\section*{Conclusion}
+Conclude.
+
+\section*{References}
+% \bibliographystyle{plain} 
+\cite{ameru_2025}
+
+
+\section*{Appendices (if any)}
+If you want to put anything else in the report, please write them in this section.
+
+\vspace{1cm}
+
+\noindent \textit{Only one report from a group is to be submitted.}
+
+\end{document}
